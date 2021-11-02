@@ -1,0 +1,124 @@
+*{
+ 
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  min-height: 100%;
+}
+
+html{
+  height: 100%;
+}
+
+.wrapper{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper{
+  display: grid;
+  grid-template:
+  "header"
+  "menu" 200px
+  "hero" 200px
+  "main"
+  "extra"
+  "image"
+  "banner";
+  
+}
+
+.header{
+  background-color: #9E9587;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu{
+  background-color: #453823;
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero{
+  background-color: #561F37;
+  grid-area: hero;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.main{
+  background-color: #39A2AE;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner{
+  background-color: #8238a6;
+  grid-area: banner;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}   
+
+.extra{
+  background-color: #de7b49;
+  grid-area: extra;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image{
+  background-color: #5DAC03;
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .wrapper{
+    grid-template: 
+    "header header header" 50px
+    "hero hero hero" 300px
+    "hero hero hero"
+    "menu main main" 300px
+    "menu banner banner"
+    "menu extra image"
+     /
+    150px auto
+    ;
+  }
+  
+}
+
+@media (min-width: 900px){
+  .wrapper{
+    grid-template: 
+    "header menu menu menu" 50px
+    "hero hero hero hero" 600px
+    "hero hero hero hero"
+    "main main . image"
+    "main main . extra"
+    "banner banner banner banner" 100px /
+    800px auto
+    ;
+  }  
+}
+
+
+
+
+
