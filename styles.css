@@ -23,8 +23,8 @@ html{
   display: grid;
   grid-template:
   "header"
-  "menu" 200px
-  "hero" 200px
+  "menu" 1em
+  "hero" 1em
   "main"
   "extra"
   "image"
@@ -91,10 +91,10 @@ html{
 @media (min-width: 500px) {
   .wrapper{
     grid-template: 
-    "header header header" 50px
-    "hero hero hero" 300px
+    "header header header" 3em
+    "hero hero hero" 18em
     "hero hero hero"
-    "menu main main" 300px
+    "menu main main" 20em
     "menu banner banner"
     "menu extra image"
      /
@@ -107,13 +107,13 @@ html{
 @media (min-width: 900px){
   .wrapper{
     grid-template: 
-    "header menu menu menu" 50px
-    "hero hero hero hero" 600px
+    "header menu menu menu" 3em
+    "hero hero hero hero" 38em
     "hero hero hero hero"
     "main main . image"
     "main main . extra"
-    "banner banner banner banner" 100px /
-    800px auto
+    "banner banner banner banner" 6rem /
+    50em auto
     ;
   }  
 }
