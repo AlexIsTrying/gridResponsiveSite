@@ -23,8 +23,8 @@ html{
   display: grid;
   grid-template:
   "header"
-  "menu" 1em
-  "hero" 1em
+  "menu" 9em
+  "hero" 9em
   "main"
   "extra"
   "image"
@@ -98,7 +98,7 @@ html{
     "menu banner banner"
     "menu extra image"
      /
-    150px auto
+    10em auto
     ;
   }
   
@@ -112,7 +112,7 @@ html{
     "hero hero hero hero"
     "main main . image"
     "main main . extra"
-    "banner banner banner banner" 6rem /
+    "banner banner banner banner" 6em /
     50em auto
     ;
   }  
